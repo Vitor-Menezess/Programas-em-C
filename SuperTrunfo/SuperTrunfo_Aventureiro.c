@@ -15,7 +15,7 @@
                 float Superpoder1;
 
                     // Carta 2
-                char Estado2; // No conteudo fala para usar nome de Pais, porém so agora foi mandado usar. e se mudar para pais tera que mudar algumas variaveis pois as informações em numeros dos paises vai ultrapassar o limite de caracteres de algumas variaveis
+                char Estado2; 
                 char Codigo2[4];
                 char Cidade2[50];       
                 unsigned long int Populacao2;
@@ -28,11 +28,6 @@
                             // variaveis de comparação 
                 int ComparacaoCarta1, ComparacaoCarta2;
                 int AtributoComparacao;
-
-
-                    /* pib per capita e dencidade populacional tiveram que ter suas variaveis diferentes da que foi pedido
-                    pois float é pouco para alguns dados 
-                    */
 
         // Carta 1
                 printf("   Digite uma letra de (A a H) para representar o estado da carta 1: ");
@@ -97,220 +92,220 @@
                         case 1:
                             printf("\n\n   *Sua escolha foi *Estado mais populoso*.\n");
                             
-                                                // impressão da carta 1
-                                    printf("\n *** Impressão das cartas *** \n");
-                                    printf("*** Carta 1 ***\n");
-                                    printf("Estado: %c\n", Estado1);
-                                    printf("Código: %s\n", Codigo1);
-                                    printf("Nome da Cidade: %s\n", Cidade1);
-                                    printf("População: %lu\n", Populacao1);
-                                    printf("Área: %.2f Km²\n", Area1);
-                                    printf("PIB: %.2f\n", PIB1);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
-                                    printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
-                                                // espaço entre as cartas 
-                                    printf("\n-------------------------\n");
-                                                // impressão da carta 2
-                                    printf(" *** Carta 2 ***\n");
-                                    printf("Estado: %c\n", Estado2);
-                                    printf("Código: %s\n", Codigo2);
-                                    printf("Nome da Cidade: %s\n", Cidade2);
-                                    printf("População: %lu\n", Populacao2);
-                                    printf("Área: %.2f Km²\n", Area2);
-                                    printf("PIB: %.2f\n", PIB2);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
-                                    printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
+                                        // impressão da carta 1
+                            printf("\n *** Impressão das cartas *** \n");
+                            printf("*** Carta 1 ***\n");
+                            printf("Estado: %c\n", Estado1);
+                            printf("Código: %s\n", Codigo1);
+                            printf("Nome da Cidade: %s\n", Cidade1);
+                            printf("População: %lu\n", Populacao1);
+                            printf("Área: %.2f Km²\n", Area1);
+                            printf("PIB: %.2f\n", PIB1);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
+                            printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
+                                        // espaço entre as cartas 
+                            printf("\n-------------------------\n");
+                                        // impressão da carta 2
+                            printf(" *** Carta 2 ***\n");
+                            printf("Estado: %c\n", Estado2);
+                            printf("Código: %s\n", Codigo2);
+                            printf("Nome da Cidade: %s\n", Cidade2);
+                            printf("População: %lu\n", Populacao2);
+                            printf("Área: %.2f Km²\n", Area2);
+                            printf("PIB: %.2f\n", PIB2);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
+                            printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
 
-                                if (Populacao1 > Populacao2){
-                                    printf("Carta 1 Ganhou!!\n");
-                                } else if (Populacao2 > Populacao1){
-                                    printf("Carta 2 Ganhou!!\n");                             
-                                } else {
-                                    printf("Houve um empate!!");
-                                }
+                        if (Populacao1 > Populacao2){
+                            printf("Carta 1 Ganhou!!\n");
+                        } else if (Populacao2 > Populacao1){
+                            printf("Carta 2 Ganhou!!\n");                             
+                        } else {
+                            printf("Houve um empate!!");
+                        }
                         break;
                         case 2:
                     printf("\n\n   *Sua escolha foi *Estado com a maior área em Km²*.\n");
                     
-                                                // impressão da carta 1
-                                    printf("\n *** Impressão das cartas *** \n");
-                                    printf("*** Carta 1 ***\n");
-                                    printf("Estado: %c\n", Estado1);
-                                    printf("Código: %s\n", Codigo1);
-                                    printf("Nome da Cidade: %s\n", Cidade1);
-                                    printf("População: %lu\n", Populacao1);
-                                    printf("Área: %.2f Km²\n", Area1);
-                                    printf("PIB: %.2f\n", PIB1);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
-                                    printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
-                                                // espaço entre as cartas 
-                                    printf("\n-------------------------\n");
-                                                // impressão da carta 2
-                                    printf(" *** Carta 2 ***\n");
-                                    printf("Estado: %c\n", Estado2);
-                                    printf("Código: %s\n", Codigo2);
-                                    printf("Nome da Cidade: %s\n", Cidade2);
-                                    printf("População: %lu\n", Populacao2);
-                                    printf("Área: %.2f Km²\n", Area2);
-                                    printf("PIB: %.2f\n", PIB2);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
-                                    printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
+                                        // impressão da carta 1
+                            printf("\n *** Impressão das cartas *** \n");
+                            printf("*** Carta 1 ***\n");
+                            printf("Estado: %c\n", Estado1);
+                            printf("Código: %s\n", Codigo1);
+                            printf("Nome da Cidade: %s\n", Cidade1);
+                            printf("População: %lu\n", Populacao1);
+                            printf("Área: %.2f Km²\n", Area1);
+                            printf("PIB: %.2f\n", PIB1);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
+                            printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
+                                        // espaço entre as cartas 
+                            printf("\n-------------------------\n");
+                                        // impressão da carta 2
+                            printf(" *** Carta 2 ***\n");
+                            printf("Estado: %c\n", Estado2);
+                            printf("Código: %s\n", Codigo2);
+                            printf("Nome da Cidade: %s\n", Cidade2);
+                            printf("População: %lu\n", Populacao2);
+                            printf("Área: %.2f Km²\n", Area2);
+                            printf("PIB: %.2f\n", PIB2);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
+                            printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
 
-                                if (Area1 > Area2){
-                                    printf("Carta 1 Ganhou!!\n");
-                                } else if (Area2 > Area1){
-                                    printf("Carta 2 Ganhou!!\n");                             
-                                } else {
-                                    printf("Houve um empate!!");
-                                }
+                        if (Area1 > Area2){
+                            printf("Carta 1 Ganhou!!\n");
+                        } else if (Area2 > Area1){
+                            printf("Carta 2 Ganhou!!\n");                             
+                        } else {
+                            printf("Houve um empate!!");
+                        }
                         break;
                         case 3:
                     printf("\n\n   *Sua escolha foi *Com o PIB mais elevado*.\n");
-                                                 // impressão da carta 1
-                                    printf("\n *** Impressão das cartas *** \n");
-                                    printf("*** Carta 1 ***\n");
-                                    printf("Estado: %c\n", Estado1);
-                                    printf("Código: %s\n", Codigo1);
-                                    printf("Nome da Cidade: %s\n", Cidade1);
-                                    printf("População: %lu\n", Populacao1);
-                                    printf("Área: %.2f Km²\n", Area1);
-                                    printf("PIB: %.2f\n", PIB1);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
-                                    printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
-                                                // espaço entre as cartas 
-                                    printf("\n-------------------------\n");
-                                                // impressão da carta 2
-                                    printf(" *** Carta 2 ***\n");
-                                    printf("Estado: %c\n", Estado2);
-                                    printf("Código: %s\n", Codigo2);
-                                    printf("Nome da Cidade: %s\n", Cidade2);
-                                    printf("População: %lu\n", Populacao2);
-                                    printf("Área: %.2f Km²\n", Area2);
-                                    printf("PIB: %.2f\n", PIB2);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
-                                    printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
+                                            // impressão da carta 1
+                            printf("\n *** Impressão das cartas *** \n");
+                            printf("*** Carta 1 ***\n");
+                            printf("Estado: %c\n", Estado1);
+                            printf("Código: %s\n", Codigo1);
+                            printf("Nome da Cidade: %s\n", Cidade1);
+                            printf("População: %lu\n", Populacao1);
+                            printf("Área: %.2f Km²\n", Area1);
+                            printf("PIB: %.2f\n", PIB1);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
+                            printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
+                                        // espaço entre as cartas 
+                            printf("\n-------------------------\n");
+                                        // impressão da carta 2
+                            printf(" *** Carta 2 ***\n");
+                            printf("Estado: %c\n", Estado2);
+                            printf("Código: %s\n", Codigo2);
+                            printf("Nome da Cidade: %s\n", Cidade2);
+                            printf("População: %lu\n", Populacao2);
+                            printf("Área: %.2f Km²\n", Area2);
+                            printf("PIB: %.2f\n", PIB2);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
+                            printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
 
-                                if (PIB1 > PIB2){
-                                    printf("Carta 1 Ganhou!!\n");
-                                } else if (PIB2 > PIB1){
-                                    printf("Carta 2 Ganhou!!\n");                             
-                                } else {
-                                    printf("Houve um empate!!");
-                                }
+                        if (PIB1 > PIB2){
+                            printf("Carta 1 Ganhou!!\n");
+                        } else if (PIB2 > PIB1){
+                            printf("Carta 2 Ganhou!!\n");                             
+                        } else {
+                            printf("Houve um empate!!\n");
+                        }
                         break;
                         case 4:
                     printf("\n\n   *Sua escolha foi *Com a menor dencidade demografica*.\n");
-                                                                    // impressão da carta 1
-                                    printf("\n *** Impressão das cartas *** \n");
-                                    printf("*** Carta 1 ***\n");
-                                    printf("Estado: %c\n", Estado1);
-                                    printf("Código: %s\n", Codigo1);
-                                    printf("Nome da Cidade: %s\n", Cidade1);
-                                    printf("População: %lu\n", Populacao1);
-                                    printf("Área: %.2f Km²\n", Area1);
-                                    printf("PIB: %.2f\n", PIB1);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
-                                    printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
-                                                // espaço entre as cartas 
-                                    printf("\n-------------------------\n");
-                                                // impressão da carta 2
-                                    printf(" *** Carta 2 ***\n");
-                                    printf("Estado: %c\n", Estado2);
-                                    printf("Código: %s\n", Codigo2);
-                                    printf("Nome da Cidade: %s\n", Cidade2);
-                                    printf("População: %lu\n", Populacao2);
-                                    printf("Área: %.2f Km²\n", Area2);
-                                    printf("PIB: %.2f\n", PIB2);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
-                                    printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
+                                         // impressão da carta 1
+                            printf("\n *** Impressão das cartas *** \n");
+                            printf("*** Carta 1 ***\n");
+                            printf("Estado: %c\n", Estado1);
+                            printf("Código: %s\n", Codigo1);
+                            printf("Nome da Cidade: %s\n", Cidade1);
+                            printf("População: %lu\n", Populacao1);
+                            printf("Área: %.2f Km²\n", Area1);
+                            printf("PIB: %.2f\n", PIB1);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
+                            printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
+                                        // espaço entre as cartas 
+                            printf("\n-------------------------\n");
+                                        // impressão da carta 2
+                            printf(" *** Carta 2 ***\n");
+                            printf("Estado: %c\n", Estado2);
+                            printf("Código: %s\n", Codigo2);
+                            printf("Nome da Cidade: %s\n", Cidade2);
+                            printf("População: %lu\n", Populacao2);
+                            printf("Área: %.2f Km²\n", Area2);
+                            printf("PIB: %.2f\n", PIB2);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
+                            printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
 
-                                if (Densipopulacional1 < Densipopulacional2){
-                                    printf("Carta 1 Ganhou!!\n");
-                                } else if (Densipopulacional2 < Densipopulacional1){
-                                    printf("Carta 2 Ganhou!!\n");                             
-                                } else {
-                                    printf("Houve um empate!!");
-                                }
+                        if (Densipopulacional1 < Densipopulacional2){
+                            printf("Carta 1 Ganhou!!\n");
+                        } else if (Densipopulacional2 < Densipopulacional1){
+                            printf("Carta 2 Ganhou!!\n");                             
+                        } else {
+                            printf("Houve um empate!!\n");
+                        }
                         break;
                         case 5:
                     printf("\n\n   *Sua escolha foi *Com o maior número de pontos turisticos*.\n");
-                                                                    // impressão da carta 1
-                                    printf("\n *** Impressão das cartas *** \n");
-                                    printf("*** Carta 1 ***\n");
-                                    printf("Estado: %c\n", Estado1);
-                                    printf("Código: %s\n", Codigo1);
-                                    printf("Nome da Cidade: %s\n", Cidade1);
-                                    printf("População: %lu\n", Populacao1);
-                                    printf("Área: %.2f Km²\n", Area1);
-                                    printf("PIB: %.2f\n", PIB1);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
-                                    printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
-                                                // espaço entre as cartas 
-                                    printf("\n-------------------------\n");
-                                                // impressão da carta 2
-                                    printf(" *** Carta 2 ***\n");
-                                    printf("Estado: %c\n", Estado2);
-                                    printf("Código: %s\n", Codigo2);
-                                    printf("Nome da Cidade: %s\n", Cidade2);
-                                    printf("População: %lu\n", Populacao2);
-                                    printf("Área: %.2f Km²\n", Area2);
-                                    printf("PIB: %.2f\n", PIB2);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
-                                    printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
+                                        // impressão da carta 1
+                            printf("\n *** Impressão das cartas *** \n");
+                            printf("*** Carta 1 ***\n");
+                            printf("Estado: %c\n", Estado1);
+                            printf("Código: %s\n", Codigo1);
+                            printf("Nome da Cidade: %s\n", Cidade1);
+                            printf("População: %lu\n", Populacao1);
+                            printf("Área: %.2f Km²\n", Area1);
+                            printf("PIB: %.2f\n", PIB1);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
+                            printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
+                                        // espaço entre as cartas 
+                            printf("\n-------------------------\n");
+                                        // impressão da carta 2
+                            printf(" *** Carta 2 ***\n");
+                            printf("Estado: %c\n", Estado2);
+                            printf("Código: %s\n", Codigo2);
+                            printf("Nome da Cidade: %s\n", Cidade2);
+                            printf("População: %lu\n", Populacao2);
+                            printf("Área: %.2f Km²\n", Area2);
+                            printf("PIB: %.2f\n", PIB2);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
+                            printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
 
-                                if (Pontos_turisticos1 > Pontos_turisticos2){
-                                    printf("Carta 1 Ganhou!!\n");
-                                } else if (Pontos_turisticos2 > Pontos_turisticos1){
-                                    printf("Carta 2 Ganhou!!\n");                             
-                                } else {
-                                    printf("Houve um empate!!");
-                                }
+                        if (Pontos_turisticos1 > Pontos_turisticos2){
+                            printf("Carta 1 Ganhou!!\n");
+                        } else if (Pontos_turisticos2 > Pontos_turisticos1){
+                            printf("Carta 2 Ganhou!!\n");                             
+                        } else {
+                            printf("Houve um empate!!\n");
+                        }
                         break;
                         case 6:
                     printf("\n\n   *Sua escolha foi *Com o maior super poder*.\n");
-                                                                    // impressão da carta 1
-                                    printf("\n *** Impressão das cartas *** \n");
-                                    printf("*** Carta 1 ***\n");
-                                    printf("Estado: %c\n", Estado1);
-                                    printf("Código: %s\n", Codigo1);
-                                    printf("Nome da Cidade: %s\n", Cidade1);
-                                    printf("População: %lu\n", Populacao1);
-                                    printf("Área: %.2f Km²\n", Area1);
-                                    printf("PIB: %.2f\n", PIB1);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
-                                    printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
-                                                // espaço entre as cartas 
-                                    printf("\n-------------------------\n");
-                                                // impressão da carta 2
-                                    printf(" *** Carta 2 ***\n");
-                                    printf("Estado: %c\n", Estado2);
-                                    printf("Código: %s\n", Codigo2);
-                                    printf("Nome da Cidade: %s\n", Cidade2);
-                                    printf("População: %lu\n", Populacao2);
-                                    printf("Área: %.2f Km²\n", Area2);
-                                    printf("PIB: %.2f\n", PIB2);
-                                    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
-                                    printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
-                                    printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
+                                        // impressão da carta 1
+                            printf("\n *** Impressão das cartas *** \n");
+                            printf("*** Carta 1 ***\n");
+                            printf("Estado: %c\n", Estado1);
+                            printf("Código: %s\n", Codigo1);
+                            printf("Nome da Cidade: %s\n", Cidade1);
+                            printf("População: %lu\n", Populacao1);
+                            printf("Área: %.2f Km²\n", Area1);
+                            printf("PIB: %.2f\n", PIB1);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos1);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional1);
+                            printf("PIB per Capita: %.2f reais\n", PIBpercapita1);
+                                        // espaço entre as cartas 
+                            printf("\n-------------------------\n");
+                                        // impressão da carta 2
+                            printf(" *** Carta 2 ***\n");
+                            printf("Estado: %c\n", Estado2);
+                            printf("Código: %s\n", Codigo2);
+                            printf("Nome da Cidade: %s\n", Cidade2);
+                            printf("População: %lu\n", Populacao2);
+                            printf("Área: %.2f Km²\n", Area2);
+                            printf("PIB: %.2f\n", PIB2);
+                            printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos2);
+                            printf("Densidade Populacional: %.2f hab/km²\n", Densipopulacional2);
+                            printf("PIB per Capita: %.2f reais\n\n\n", PIBpercapita2);
 
-                                if (Superpoder1 > Superpoder2){
-                                    printf("Carta 1 Ganhou!!\n");
-                                } else if (Superpoder2 > Superpoder1){
-                                    printf("Carta 2 Ganhou!!\n");                             
-                                } else {
-                                    printf("Houve um empate!!");
-                                }
+                        if (Superpoder1 > Superpoder2){
+                            printf("Carta 1 Ganhou!!\n");
+                        } else if (Superpoder2 > Superpoder1){
+                            printf("Carta 2 Ganhou!!\n");                             
+                        } else {
+                            printf("Houve um empate!!\n");
+                        }
                         break;
 
                     default:
@@ -319,8 +314,6 @@
                     }
                
     return 0;
-
-
-            }
+}
 
     

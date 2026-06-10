@@ -25,9 +25,7 @@
                 float Densipopulacional2;
                 float PIBpercapita2;
                 float Superpoder2;
-                    /* pib per capita e dencidade populacional tiveram que ter suas variaveis diferentes da que foi pedido
-                    pois float é pouco para alguns dados 
-                    */
+                    
 
         // Carta 1
                 printf("Digite uma letra de (A a H) para representar o estado da carta 1: ");
@@ -125,8 +123,5 @@
                             printf("Carta 2 (%s) Venceu!!\n", Cidade2);
                         }
 
-                // TENHO QUE TROCAR AS VARIAVEIS POIS AS VARIVEIS DE PIB, DENCI... E OUTRAS É MUITO POUCO NUMERO PERMITIDO
-    return 0;
-
-
-            }
+return 0; 
+}
